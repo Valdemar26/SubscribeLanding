@@ -1,0 +1,141 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    background: #f9f9f9;
+}
+
+header{
+    background: url("images/header-bg.jpg") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 135px 20px 90px 20px;
+}
+header>h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+header>h3{
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+header>p{
+    font-size: 12px;
+}
+.subscribe{
+    background: rgba(0,0,0,0.65);
+    display: table;
+    padding: 20px;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+}
+.subscribe input {
+    float: left;
+}
+.subscribe input[type="text"], .subscribe input[type="email"] {
+    padding: 12px 20px 13px 20px;
+    box-sizing: border-box;
+    border: 0;
+    width: 320px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.subscribe input[type="submit"] {
+    color: #fff;
+    background: #ae2c52;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+article{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+article>h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+article>p{
+    margin-bottom: 30px;
+}
+.imgleft{
+    float: left;
+    margin: 0 30px 20px 0;
+}
+.imgright{
+    float: right;
+    margin: 0 30px 20px 0;
+}
+/* media queries */
+    @media screen and (max-width: 1199px){
+    .subscribe input[type="text"], .subscribe input[type="email"]{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 768px){
+    .subscribe input[type="text"], .subscribe input[type="email"]{
+        width: 320px;
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    header{
+        padding: 30px 20px;
+    }
+    header>h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    header>h3{
+        font-size: 16px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+}
+@media screen and (max-width: 480px){
+    .subscribe input[type="text"], .subscribe input[type="email"]{
+        width: 240px;
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    header>h1{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    header>h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    article>h2{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    article>p{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px){
+    .subscribe input[type="text"], .subscribe input[type="email"]{
+        width: 180px;
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .subscribe input[type="submit"] {
+        padding: 10px 10px;
+    }
+}
